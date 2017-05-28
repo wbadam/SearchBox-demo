@@ -1,0 +1,23 @@
+@import "mytheme.scss";
+@import "addons.scss";
+
+// This file prefixes all rules with the theme name to avoid causing conflicts with other themes.
+// The actual styles should be defined in mytheme.scss
+
+.mytheme {
+  @include addons;
+  @include mytheme;
+
+  .suggestion-container {
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .userimage {
+    border-radius: 50%;
+  }
+  .username {
+    padding-left: 10px;
+  }
+}
